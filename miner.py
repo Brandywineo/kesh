@@ -353,8 +353,7 @@ def main():
         while True:
             time.sleep(0.5)
     except KeyboardInterrupt:
-        log("
-⛔ Stopping miner…")
+        log("Stopping miner…")
         STOP_EVENT.set()
         NEW_JOB_EVENT.set()
         for t in workers:
